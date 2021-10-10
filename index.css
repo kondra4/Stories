@@ -10,7 +10,7 @@ body {
 
 .timeline {
     display: flex;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .timeline-chunk {
@@ -24,8 +24,11 @@ body {
     margin-left: 2px;
 }
 
-.timeline-chunk-inner {
+.timeline-chunk-active ~ .timeline-chunk > .timeline-chunk-inner {
     width: 0;
+}
+
+.timeline-chunk-inner {
     height: inherit;
     background-color: #ffffff;
     border-radius: inherit;
@@ -37,6 +40,7 @@ body {
 
 .player-content img{
     width: 100%;
+
 }
 
 .player-chunk {
